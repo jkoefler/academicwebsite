@@ -14,16 +14,15 @@ export default function Header() {
         { href: "/research", text: "Research" },
         { href: "/teaching", text: "Teaching" },
         { href: "/cv", text: "CV" },
-        { href: "/contact", text: "Contact" },
     ];
 
     return (
-        <header id="about ">
+        <header>
             <Navbar setMobileMenuOpen={setMobileMenuOpen} navLinks={navLinks}></Navbar>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <DialogBackdrop className="fixed inset-0 backdrop-blur-xs" />
                 <div className="fixed inset-0 z-10" />
-                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gradient-to-br from-zinc-100 to-zinc-200 p-8 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gradient-to-br from-zinc-100 to-zinc-200 px-4 py-8 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <Logo href="/" text="Joris Koefler" />
 
@@ -34,11 +33,11 @@ export default function Header() {
                     </div>
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
+                            <div className="space-y-2 py-8">
                                 {navLinks.filter(i => i.text != "Contact").map(i => <Link onClick={() => setMobileMenuOpen(false)} href={i.href} className="links-dialogpanel">{i.text}</Link>)}
                             </div>
                             <div className="py-6">
-                                <Link onClick={() => setMobileMenuOpen(false)} href="/contact" className="links-dialogpanel">
+                                <Link onClick={() => setMobileMenuOpen(false)} href="/" className="links-dialogpanel">
                                     Contact
                                 </Link>
                             </div>
@@ -52,7 +51,7 @@ export default function Header() {
 
 function Navbar(props) {
     return (
-        <nav className="flex items-center justify-between py-8 lg:px-16 lg:py-10">
+        <nav className="flex items-center justify-between px-4 py-8 lg:px-16 lg:py-10">
             <Logo href="/" text="Joris Koefler" />
             <button type="button" onClick={() => props.setMobileMenuOpen(true)} className="lg:hidden -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <Bars2Icon aria-hidden="true" className="h-6 w-6" />

@@ -9,7 +9,7 @@ const navLinks = [
     { href: "/research", text: "Research" },
     { href: "/teaching", text: "Teaching" },
     { href: "/cv", text: "CV" },
-    { href: "/contact", text: "Contact" },
+    { href: "/", text: "Contact" },
 ]
 
 export default function Footer() {
