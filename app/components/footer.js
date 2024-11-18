@@ -17,7 +17,7 @@ export default function Footer() {
         <footer className="">
             <nav aria-label="Global" className="flex items-center flex-col gap-12 p-10 lg:px-8">
                 <div className="flex flex-row flex-wrap justify-evenly gap-6 sm:gap-12">
-                    {navLinks.map(({ href, text }) => <Link href={href} className="footer-nav">{text}</Link>)}
+                    {navLinks.map(({ href, text }, index) => <Link key={index} href={href} className="footer-nav">{text}</Link>)}
                 </div>
 
                 <SocialMediaBar />
@@ -39,8 +39,8 @@ const socialIcons = [
 export function SocialMediaBar() {
     return (
         <div className="flex flex-row mx-auto items-center space-x-10">
-            {socialIcons.map(({ href, icon }) =>
-                <Link href={href}>
+            {socialIcons.map(({ href, icon }, index) =>
+                <Link href={href} key={index}>
                     <FontAwesomeIcon icon={icon} size="lg" style={{ color: "#8b919c" }} />
                 </Link>
             )}

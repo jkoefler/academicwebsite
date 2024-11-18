@@ -13,8 +13,8 @@ export default function UpcomingEvents() {
       <h1 className="text-balance font-extrabold text-4xl">
         Upcoming Events
       </h1>
-      {events.map(({ days, year, month, link, title, location }) => {
-        return <Event days={days} year={year} month={month} link={link} title={title} location={location}/>
+      {events.map(({ days, year, month, link, title, location }, index) => {
+        return <Event key={index} days={days} year={year} month={month} link={link} title={title} location={location}/>
       })}
     </div>
   );

@@ -13,15 +13,15 @@ export default function TimeLine() {
 
   return (
     <div id="timeline" className="relative max-w-6xl mx-8 lg:mx-16 after:absolute after:h-full after:w-[3px] after:bg-black after:rounded-lg after:top-0">
-      {data.map(({ logoURL, date, title, subtitle, bullets }) =>
-        <div className="pl-10 lg:pl-20 py-6 relative w-full">
+      {data.map(({ logoURL, date, title, subtitle, bullets }, index) =>
+        <div key={index} className="pl-10 lg:pl-20 py-6 relative w-full">
           <img src={logoURL} className="shadow-lg absolute w-12 rounded-full -left-[23px] top-[3.5rem] z-10" />
           <div className="p-5 sm:p-10 bg-black text-white  shadow-lg shadow-inherant relative rounded-lg text-sm sm:text-lg flex flex-col gap-1 lg:gap-2">
             <p className="font-extralight text-xs lg:text-base">{date}</p>
             <h1 className="font-bold text-2xl lg:text-2xl">{title}</h1>
             <ul className='list-disc list-inside text-sm lg:text-lg'>
               <span className='text-base lg:text-lg'>{subtitle}</span>
-              {bullets.map(j => <li className='pl-5'>{j}</li>)}
+              {bullets.map(j, index => <li key={index} className='pl-5'>{j}</li>)}
             </ul>
           </div>
         </div>

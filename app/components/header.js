@@ -35,7 +35,7 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-8">
-                                {navLinks.filter(i => i.text != "Contact").map(i => <Link onClick={() => setMobileMenuOpen(false)} href={i.href} className="links-dialogpanel">{i.text}</Link>)}
+                                {navLinks.filter(i => i.text != "Contact").map(i, index => <Link onClick={() => setMobileMenuOpen(false)} href={i.href} key={index} className="links-dialogpanel">{i.text}</Link>)}
                             </div>
                             <div className="py-6">
                                 <Link onClick={() => setMobileMenuOpen(false)} href="/" className="links-dialogpanel">
@@ -58,7 +58,7 @@ function Navbar(props) {
                 <Bars2Icon aria-hidden="true" className="h-6 w-6" />
             </button>
             <PopoverGroup className="hidden lg:flex lg:gap-x-8">
-                {props.navLinks.map(({ href, text }) => <SecondaryButton href={href} text={text} />)}
+                {props.navLinks.map(({ href, text }, index) => <SecondaryButton key={index} href={href} text={text} />)}
             </PopoverGroup>
         </nav>);
 }

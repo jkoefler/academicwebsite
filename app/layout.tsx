@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Joris Koefler's Website</title>
+        <title>Joris Koefler&apos;s Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </head>
       <body className="bg-gradient-to-r from-zinc-100 to-zinc-200 2xl:max-w-[1536px] mx-auto">
