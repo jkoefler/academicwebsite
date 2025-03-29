@@ -1,5 +1,10 @@
+'use client';
+import Publications from "@/app/components/Publications.js";
+
 export default function Research() {
     return (
-        <div className="flex items-center justify-center h-screen"></div>
+        <div className="relative">
+        <Publications/>
+        </div>
 );
 }

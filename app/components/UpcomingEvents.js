@@ -5,13 +5,13 @@ export default function UpcomingEvents() {
 
   const events = [
     {days: "17.-22.", month: "Nov.", year: "2024", location: "Princeton, New Jersey", link: "https://www.ias.edu/mathematical-physics/combinatorics-fundamental-physics-workshop",  title: "Combinatorics for fundamental physics"},
-    {days: "25.-28.", month: "Nov.", year: "2024", location: "Leipzig, Germany", link: "https://www.mis.mpg.de/events/series/macaulay2-in-the-sciences",  title: "Macaulay2 in the Sciences"}
+    {days: "07.-11.", month: "Jul.", year: "2025", location: "Madison, Wisconsin", link: "https://www.siam.org/conferences-events/siam-conferences/ag25/",  title: "SIAM: Applied Algebraic Geometry"}
   ]
 
   return (
     <div id="events" className="flex flex-col gap-8 mb-4 lg:mx-16">
       <h1 className="text-balance font-extrabold text-4xl">
-        Upcoming Events
+        Upcoming & Recent Events
       </h1>
       {events.map(({ days, year, month, link, title, location }, index) => {
         return <Event key={index} days={days} year={year} month={month} link={link} title={title} location={location}/>
