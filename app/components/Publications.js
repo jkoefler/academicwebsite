@@ -4,9 +4,35 @@ import Abstract from "@/app/components/Abstract.js";
 export default function Publications() {
   return (
     <div className="flex flex-col gap-9 lg:mx-16">
+      {/*2025*/}
       <div className="w-full border-t border-gray-300 mt-8 relative">
       <span className="absolute left-0 top-2 text-gray-500 text-sm">2025</span>
       </div>
+
+      {/* New Section with Image on Left and Text on Right */}
+    <div className="flex flex-col lg:flex-row items-center justify-start text-center lg:text-left px-4 lg:px-8 gap-12 transition-all duration-700 ease-in-out">
+        {/* Left - Image */}
+        <div className="flex justify-center w-1/2 lg:w-1/4">
+          <img src="/connectionMatrices.png" alt="Project Image" className="rounded-xl  object-contain w-auto h-auto lg:h-auto mx-auto" />
+        </div>
+        {/* Right - Text */}
+        <div className=" flex-shrink-0 w-full lg:w-3/4 text-center lg:text-left p-4">
+          {/* Highlited publication section */}
+          <h2 className = "text-balance font-bold text-2xl mt-0 mb-0">
+            Connection Matrices in Macaulay2
+          </h2>
+          <p className="text-balance text-gray-600 mt-0">  {/* Removed margin-top */}
+            with Paul Görlach, Anna-Laura Sattelberger, Mahrud Sayrafi, Hendrik Schroeder, Nicolas Weiss, Francesca Zaffalon
+          </p>
+          <Abstract
+          text="Systems of homogeneous linear PDEs can be represented as left ideals in the Weyl algebra. Using Gröbner basis techniques, these systems can be systematically encoded by connection matrices. In fundamental particle physics and theoretical cosmology, when investigating scattering amplitudes and cosmological correlators, they turn up as systems of differential equations in matrix form. We explain the implementation of our package ConnectionMatrices in Macaulay2 and showcase a few examples from physics."
+          />
+          <Link href="https://arxiv.org/abs/2504.01362" target="_blank" rel="noopener noreferrer" className="text-balance font-semibold text-1xl mb-1 hover:underline">
+            arXiv
+          </Link>
+        </div>
+      </div>
+
     {/* New Section with Image on Left and Text on Right */}
     <div className="flex flex-col lg:flex-row items-center justify-start text-center lg:text-left px-4 lg:px-8 gap-12 transition-all duration-700 ease-in-out">
         {/* Left - Image */}
@@ -31,6 +57,7 @@ export default function Publications() {
         </div>
       </div>
 
+      {/*2024*/}
       <div className="w-full border-t border-gray-300 mt-8 relative">
       <span className="absolute left-0 top-2 text-gray-500 text-sm">2024</span>
       </div>  
