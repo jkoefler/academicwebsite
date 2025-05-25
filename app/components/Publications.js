@@ -79,14 +79,12 @@ export default function Publications() {
           <Abstract
           text = "We investigate MHV tree-level gravity amplitudes as defined on the spinor-helicity variety. Unlike their gluon counterparts, the gravity amplitudes do not have logarithmic singularities and do not admit Amplituhedron-like construction. Importantly, they are not determined just by their singularities, but rather their numerators have interesting zeroes. We make a conjecture about the uniqueness of the numerator and explore this feature from a more mathematical perspective. This leads us to a new approach for examining adjoints. We outline steps of our proposed proof and provide computational evidence for its validity in specific cases."
           />
-          <p className="text-lg text-gray-700 mt-1">
-            To appear in Le Mathematiche, special volume on Positive Geometry.
-          </p>
-          <Link href="https://arxiv.org/abs/2412.08713" target="_blank" rel="noopener noreferrer" className="text-balance font-semibold mb-1 hover:underline">
-            arXiv
+          <Link href="https://lematematiche.dmi.unict.it/index.php/lematematiche" target="_blank" rel="noopener noreferrer" className="text-balance font-semibold mb-1 hover:underline">
+            Le Mathematiche, special volume on Positive Geometry.
           </Link>
         </div>
       </div>    
     </div>
   );
 }
+

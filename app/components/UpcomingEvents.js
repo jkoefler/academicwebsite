@@ -4,8 +4,10 @@ import { eventNames } from "process";
 export default function UpcomingEvents() {
 
   const events = [
-    {days: "17.-22.", month: "Nov.", year: "2024", location: "Princeton, New Jersey", link: "https://www.ias.edu/mathematical-physics/combinatorics-fundamental-physics-workshop",  title: "Combinatorics for fundamental physics"},
-    {days: "07.-11.", month: "Jul.", year: "2025", location: "Madison, Wisconsin", link: "https://www.siam.org/conferences-events/siam-conferences/ag25/",  title: "SIAM: Applied Algebraic Geometry"}
+    {days: "07.-11.", month: "Jul.", year: "2025", location: "Madison, Wisconsin", link: "https://www.siam.org/conferences-events/siam-conferences/ag25/",  title: "SIAM: Applied Algebraic Geometry"},
+    {days: "23.-06.", month: "Jun", year: "2025", location: "Leipzig, Germany", link: "https://www.mis.mpg.de/events/series/slmath-summer-school-new-perspectives-on-discriminants-and-their-applications", title: "New perspectives on discriminants and their applications"},
+    {days: "02.-04.", month: "Jun.", year: "2025", location: "Leipzig, Germany", link: "https://www.mis.mpg.de/de/events/series/the-11th-conference-of-the-fachgruppe-computeralgebra",  title: "The 11th Conference of the Fachgruppe Computeralgebra"},
+    // {days: "17.-22.", month: "Nov.", year: "2024", location: "Princeton, New Jersey", link: "https://www.ias.edu/mathematical-physics/combinatorics-fundamental-physics-workshop",  title: "Combinatorics for fundamental physics"}
   ]
 
   return (
