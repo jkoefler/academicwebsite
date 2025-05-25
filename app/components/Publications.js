@@ -7,8 +7,9 @@ export default function Publications() {
   const papers25 = [
     {title: "Connection Matrices in Macaulay2", 
     abstract: "Systems of homogeneous linear PDEs can be represented as left ideals in the Weyl algebra. Using Gröbner basis techniques, these systems can be systematically encoded by connection matrices. In fundamental particle physics and theoretical cosmology, when investigating scattering amplitudes and cosmological correlators, they turn up as systems of differential equations in matrix form. We explain the implementation of our package ConnectionMatrices in Macaulay2 and showcase a few examples from physics.",
-    coauthors: "Paul Görlach, Anna-Laura Sattelberger, Mahrud Sayrafi, Hendrik Schroeder, Nicolas Weiss, Francesca Zaffalon", link: "https://arxiv.org/abs/2504.01362",
-    link_title: "Le Mathematiche, special volume on Positive Geometry.",
+    coauthors: "Paul Görlach, Anna-Laura Sattelberger, Mahrud Sayrafi, Hendrik Schroeder, Nicolas Weiss, Francesca Zaffalon",
+    link: "https://arxiv.org/abs/2504.01362",
+    link_title: "arXiV",
     image:"connectionMatrices" },
   
     {title: "Taking the Amplituhedron to the limit", 
