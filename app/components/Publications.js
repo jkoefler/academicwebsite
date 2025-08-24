@@ -28,7 +28,7 @@ export default function Publications() {
     <div id="papers" className="flex flex-col gap-8 mb-4 lg:mx-16">
       <div className="flex flex-col gap-9 lg:mx-4">
          {/*2025*/}
-         <div className="w-full border-t border-gray-300 mt-8 relative">
+         <div className="mx-4 border-t border-gray-300 mt-8 relative">
          <span className="absolute left-0 top-2 text-gray-500 text-sm">2025</span>
          </div>
         {papers25.map(({title, abstract, coauthors, link, link_title, image }, index) => {
@@ -38,7 +38,7 @@ export default function Publications() {
 
       <div className="flex flex-col gap-9 lg:mx-4">
          {/*2024*/}
-         <div className="w-full border-t border-gray-300 mt-8 relative">
+         <div className="mx-4 border-t border-gray-300 mt-8 relative">
          <span className="absolute left-0 top-2 text-gray-500 text-sm">2024</span>
          </div>
         {papers24.map(({title, abstract, coauthors, link, link_title, image }, index) => {

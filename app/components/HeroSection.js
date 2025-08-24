@@ -33,7 +33,7 @@ export default function HeroSection() {
             {/* Right - Text Content Block */}
             <div className="flex flex-col items-center lg:items-start gap-6 max-w-lg">
                 <h1 className="font-black text-4xl lg:text-5xl select-none">{heading}</h1>
-                <p className="text-balance text-zinc-600 tracking-wider text-lg select-none">{text}</p>
+                <p className="text-balance text-justify text-zinc-600 tracking-wider text-lg select-none">{text}</p>
                 <div className="flex flex-row space-x-6">
                     <button onClick={handleClick} className="primary-button">Research</button>
                     <div className="py-2 px-3 rounded-lg hover:bg-black hover:text-white text-base font-semibold leading-7 text-gray-900 flex items-center gap-1">

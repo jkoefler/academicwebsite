@@ -8,7 +8,7 @@ export default function ExpandableText({ text, limit = 150 }) {
 
   return (
     <div className="mt-4">
-      <p className="text-lg text-gray-700">{isExpanded ? text : shortText}</p>
+      <p className="text-lg text-justify text-gray-700">{isExpanded ? text : shortText}</p>
       {text.length > limit && (
         <button
           onClick={() => setIsExpanded(!isExpanded)}
