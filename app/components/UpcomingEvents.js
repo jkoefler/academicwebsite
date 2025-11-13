@@ -4,8 +4,9 @@ import { eventNames } from "process";
 export default function UpcomingEvents() {
 
   const events = [
+    {days: "09. - 22.", month: "Mar", year: "2026", location: "ESI, Vienna", link: "https://www.esi.ac.at/events/e586/",  title: "Amplitudes and Algebraic Geometry"},
     {days: "03. - 05.", month: "Nov", year: "2025", location: "UVA, Amsterdam", link: "https://indico.mpp.mpg.de/event/11215/",  title: "Cosmology meets Non-Linear Algebra"},
-    {days: "25. - 29.", month: "Aug", year: "2025", location: "ETH Zurich, Switzerland", link: "https://eth-its.ethz.ch/activities/CAG.html",  title: "Computations in Algebraic Geometry: Complex, Real, and Tropical"},
+    // {days: "25. - 29.", month: "Aug", year: "2025", location: "ETH Zurich, Switzerland", link: "https://eth-its.ethz.ch/activities/CAG.html",  title: "Computations in Algebraic Geometry: Complex, Real, and Tropical"},
     //{days: "07. - 11.", month: "Jul", year: "2025", location: "Madison, Wisconsin", link: "https://www.siam.org/conferences-events/siam-conferences/ag25/",  title: "SIAM: Applied Algebraic Geometry"},
     //{days: "29. - 04.", month: "Jun - Jul", year: "2025", location: "Les Diablerets, Switzerland", link: "https://swissmaprs.ch/events/the-amplituhedron-structure-combinatorics-and-positive-geometry/",  title: "The Amplituhedron: Structure, Combinatorics, and Positive Geometry"},
     //{days: "23. - 06.", month: "Jun", year: "2025", location: "Leipzig, Germany", link: "https://www.mis.mpg.de/events/series/slmath-summer-school-new-perspectives-on-discriminants-and-their-applications", title: "New perspectives on discriminants and their applications"},
