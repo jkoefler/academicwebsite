@@ -5,6 +5,13 @@ import Abstract from "@/app/components/Abstract.js";
 export default function Publications() {
 
   const papers25 = [
+    {title: "Positive Genus Pairs from Amplituhedra", 
+    abstract: "A main conjecture in the field of Positive Geometry states that amplituhedra, which are certain semi-algebraic sets in the Grassmannian, are positive geometries. It is motivated by examples showing that the canonical forms of certain amplituhedra compute scattering amplitudes in particle physics. Beyond a small number of special cases, this conjecture is still open. In recent work, Brown and Dupont introduced a new framework, based on mixed Hodge theory, connecting canonical forms and de Rham cohomology via genus zero pairs. We give short proofs that the amplituhedron gives rise to a genus zero pair in the cases when it is known to be a positive geometry. However, in the general case we show that amplituhedra inside the Grassmannian give rise to pairs of strictly positive genus. We provide an explicit example of a genus one pair arising from a positive geometry in projective space, showing that having genus zero is not a necessary condition to be a positive geometry. Finally, we show that this positive geometry still gives rise to a genus zero pair in a different ambient variety.",
+    coauthors: "Dmitrii Pavlov, Rainer Sinn",
+    link: "https://arxiv.org/abs/2601.11142",
+    link_title: "arXiV",
+    image:"3D_DelPezzo" },
+
     {title: "Connection Matrices in Macaulay2", 
     abstract: "Systems of homogeneous linear PDEs can be represented as left ideals in the Weyl algebra. Using Gröbner basis techniques, these systems can be systematically encoded by connection matrices. In fundamental particle physics and theoretical cosmology, when investigating scattering amplitudes and cosmological correlators, they turn up as systems of differential equations in matrix form. We explain the implementation of our package ConnectionMatrices in Macaulay2 and showcase a few examples from physics.",
     coauthors: "Paul Görlach, Anna-Laura Sattelberger, Mahrud Sayrafi, Hendrik Schroeder, Nicolas Weiss, Francesca Zaffalon",

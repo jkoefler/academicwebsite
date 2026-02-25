@@ -60,11 +60,11 @@ export default function ResearchInterest() {
       </h1>
 
       <HighlightedPublication
-        image="/limit_amplituhedron.png"
-        title="Limit Amplituhedron"
-        authors="joint work with Rainer Sinn"
-        description="If you ever wondered why a pizza point-blank refuses to be a positive geometry, you might want to push things to the limit. This limit amplituhedron turns out to be a positive geometry with a very nice geometric boundary stratification."
-        link="https://arxiv.org/abs/2501.08221"
+        image="/3D_DelPezzo.png"
+        title="Positive Geometries of Postive Genus"
+        authors="joint work with Dmitrii Pavlov, and Rainer Sinn"
+        description="If you thought positive geometries must make genus zero pairs, you will like our Del Pezzo cube! It has a nice canonical form, but an elliptic curve in its residual arrangement, so it makes a genus 1 pair."
+        link="https://arxiv.org/abs/2601.11142"
       />
 
       <button className="flex flex-row items-center gap-2 font-bold">
