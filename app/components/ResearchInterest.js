@@ -47,7 +47,7 @@ export default function ResearchInterest() {
       </h1>
 
       <div className="flex flex-col gap-5">
-        <p className="text-balance text-justify tracking-wider lg:tracking-normal text-zinc-600 text-lg select-none">
+        <p className="text-balance tracking-wider lg:tracking-normal text-zinc-600 text-lg select-none">
           I am interested in studying the algebro-geometric and combinatorial background of scattering amplitudes in fundamental Physics. In particular, I am interested in semi-algebraic sets appearing as positive geometries, such as the amplituhedron and their adjoint hypersurfaces. I am also part of the {" "}
           <Link className="underline font-bold" href="https://positive-geometry.com/">UNIVERSE+</Link> {" "}
            project, where we explore more connections between fundamental Physics and Positive Geometry. I am also a contributor to the Math-AI benchmark{" "} <Link className="underline font-bold" href="https://math.science-bench.ai">science-bench</Link>.
