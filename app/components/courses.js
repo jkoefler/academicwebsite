@@ -24,6 +24,18 @@ export default function Teaching() {
           date="Spring 2024; University of Leipzig"
           description="We are following the book 'Monomial Ideals' by Herzog and Hibi."
         />
+
+        <TeachingItem
+          title="Mathematical Methods in Physics"
+          date="2020-2022; Bochum University"
+          description="Regular course as part of the undergradute degree in Physics."
+        />
+
+        <TeachingItem
+          title="Lab supervisor for Physics"
+          date="2020-2022; Bochum University"
+          description="Regular course as part of the undergradute degree in Biology, Medicine, Chemistry, and Engineering."
+        />
       </div>
 
       {/* Reading Groups section */}

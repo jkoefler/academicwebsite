@@ -48,7 +48,7 @@ export default function ResearchInterest() {
 
       <div className="flex flex-col gap-5">
         <p className="text-balance tracking-wider lg:tracking-normal text-zinc-600 text-lg select-none">
-          My research is in real-algebra geometry, combinatorics and their application to scattering amplitudes in fundamental particles Physics. In particular, I am interested in semi-algebraic sets appearing as positive geometries, such as the amplituhedron, and their adjoint hypersurfaces. I am also part of the {" "}
+          My research is in real-algebraic geometry, combinatorics and their application to scattering amplitudes in fundamental particles Physics. In particular, I am interested in semi-algebraic sets appearing as positive geometries, such as the amplituhedron, and their adjoint hypersurfaces. I am also part of the {" "}
           <Link className="underline font-bold" href="https://positive-geometry.com/">UNIVERSE+</Link> {" "}
            project, where we explore more connections between fundamental Physics and Positive Geometry. I am also a contributor to the Math-AI benchmark{" "} <Link className="underline font-bold" href="https://math.science-bench.ai">science-bench</Link>.
         </p>
