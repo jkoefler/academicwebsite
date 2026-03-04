@@ -16,7 +16,7 @@ export default function Teaching() {
       {/* Courses section */}
       <div className="flex flex-col gap-2">
         <h1 className="text-balance font-extrabold text-4xl mb-4">
-          Teaching
+          Courses
         </h1>
 
         <TeachingItem
