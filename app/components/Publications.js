@@ -4,6 +4,22 @@ import Abstract from "@/app/components/Abstract.js";
 
 export default function Publications() {
 
+  const ongoing = [
+    {title: "Hyperplane Arrangements and a Quadric", 
+    abstract: "We study the cohomology groups, genera and combinatorial ranks of an arrangement of hyperplanes together with a smooth quadric hypersurface. If the arrangement is generic enough the answers to these questions depends only on the combinatorics, and we can explicitly construct a basis of the relative homology groups.",
+    coauthors: "",
+    link: "",
+    link_title: "",
+    image:"2D_arrangement" },
+
+    {title: "The Cosmological Grassmannian is a Positive Geometry", 
+    abstract: "The cosmological (orthogonal) Grassmannian captures the wave functions for cosmological events. It turns out it can be naturally constructed from positivity constraints, extending the success of the amplituhedron for flat space theories to cosmology.",
+    coauthors: "Mattia Arundine, Veronica Calvo Cortez, Facundo Rost",
+    link: "",
+    link_title: "",
+    image:"cosmo" },
+  ];
+
   const papers25 = [
     {title: "Positive Genus Pairs from Amplituhedra", 
     abstract: "A main conjecture in the field of Positive Geometry states that amplituhedra, which are certain semi-algebraic sets in the Grassmannian, are positive geometries. It is motivated by examples showing that the canonical forms of certain amplituhedra compute scattering amplitudes in particle physics. Beyond a small number of special cases, this conjecture is still open. In recent work, Brown and Dupont introduced a new framework, based on mixed Hodge theory, connecting canonical forms and de Rham cohomology via genus zero pairs. We give short proofs that the amplituhedron gives rise to a genus zero pair in the cases when it is known to be a positive geometry. However, in the general case we show that amplituhedra inside the Grassmannian give rise to pairs of strictly positive genus. We provide an explicit example of a genus one pair arising from a positive geometry in projective space, showing that having genus zero is not a necessary condition to be a positive geometry. Finally, we show that this positive geometry still gives rise to a genus zero pair in a different ambient variety.",
@@ -33,6 +49,15 @@ export default function Publications() {
 
   return (
     <div id="papers" className="flex flex-col gap-8 mb-4 lg:mx-16">
+      <div className="flex flex-col gap-9 lg:mx-4">
+              {/*ONGOING*/}
+              <div className="mx-4 border-t border-gray-300 mt-8 relative">
+              <span className="absolute left-0 top-2 text-gray-500 text-sm">ongoing</span>
+              </div>
+              {ongoing.map(({title, abstract, coauthors, link, link_title, image }, index) => {
+                return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} />
+              })}
+      </div>
       <div className="flex flex-col gap-9 lg:mx-4">
          {/*2025*/}
          <div className="mx-4 border-t border-gray-300 mt-8 relative">
@@ -70,9 +95,11 @@ function Paper({title, abstract, coauthors, link, link_title, image }) {
           <h2 className = "text-balance font-bold text-2xl mt-0 mb-0">
             {title}
           </h2>
-          <p className="text-gray-600 mt-0 text-sm">  {/* Removed margin-top */}
-            with {coauthors}
-          </p>
+          {coauthors && (
+            <p className="text-gray-600 mt-0 text-sm">
+              with {coauthors}
+            </p>
+          )}
           <Abstract
           text={abstract}
           />
