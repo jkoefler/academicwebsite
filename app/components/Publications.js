@@ -12,7 +12,7 @@ export default function Publications() {
     link_title: "",
     image:"2D_arrangement" },
 
-    {title: "The Cosmological Grassmannian is a Positive Geometry", 
+    {title: "The Cosmological Grassmannian makes a Positive Geometry", 
     abstract: "The cosmological (orthogonal) Grassmannian captures the wave functions for cosmological events. It turns out it can be naturally constructed from positivity constraints, extending the success of the amplituhedron for flat space theories to cosmology.",
     coauthors: "Mattia Arundine, Veronica Calvo Cortez, Facundo Rost",
     link: "",

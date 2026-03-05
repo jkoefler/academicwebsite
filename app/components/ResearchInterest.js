@@ -31,7 +31,7 @@ function HighlightedPublication({ image, title, authors, description, link }) {
         </p>
 
         {/* Description */}
-        <p className="text-justify text-lg text-gray-700 mt-2">
+        <p className="text-balance text-lg text-gray-700 mt-2">
           {description}
         </p>
       </div>
