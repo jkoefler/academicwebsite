@@ -51,7 +51,7 @@ export default function ResearchInterest() {
           My research is in real algebraic geometry, combinatorics and their application to scattering amplitudes in fundamental particle Physics. In particular, I am interested in semi-algebraic sets appearing as positive geometries, such as the amplituhedron, and their adjoint hypersurfaces. I am also part of the {" "}
           <Link className="underline font-bold" href="https://positive-geometry.com/">UNIVERSE+</Link> {" "}
            project, where we explore more connections between fundamental Physics and Positive Geometry. I am also a contributor to the Math-AI benchmark{" "} <Link className="underline font-bold" href="https://math.science-bench.ai">science-bench</Link>. 
-           {/* I also like to organize outreach events, for example our <Link className="underline font-bold" href="https://www.youtube.com/watch?v=poUrrdOYzUY">interview</Link> with Nima Arkani-Hamed. */}
+           I also like to organize outreach events, for example our <Link className="underline font-bold" href="https://www.youtube.com/watch?v=poUrrdOYzUY">interview</Link> with Nima Arkani-Hamed.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function ResearchInterest() {
 
       <HighlightedPublication
         image="/3D_DelPezzo.png"
-        title="Positive Geometries of Postive Genus"
+        title="Positive Geometries of Positive Genus"
         authors="joint work with Dmitrii Pavlov, and Rainer Sinn"
         description="If you thought positive geometries must make genus zero pairs, you will like our Del Pezzo cube! It has a nice canonical form, but an elliptic curve in its residual arrangement, so it makes a genus 1 pair."
         link="https://arxiv.org/abs/2601.11142"
