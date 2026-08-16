@@ -22,14 +22,14 @@ export default function HeroSection() {
     };
 
     return (
-        <div className="h-[calc(100vh-6.3rem)] flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-4 lg:px-8 gap-12 transition-all duration-700 ease-in-out">
+        <div className="min-h-[calc(100svh-6.3rem)] flex flex-col lg:flex-row items-center justify-center text-center lg:text-left px-4 py-8 lg:px-8 lg:py-0 gap-8 lg:gap-12 transition-all duration-700 ease-in-out">
             
             {/* Left - Profile Picture */}
-            <div className="h-[70vh] w-[50vh] flex justify-center">
+            <div className="h-56 w-56 sm:h-72 sm:w-72 lg:h-[70vh] lg:w-[50vh] flex shrink-0 justify-center">
                 <img 
                     src="/headshot_small.jpg" 
                     alt="Joris Koefler" 
-                    className="w-90 h-100 lg:w-100 lg:h-100 object-cover rounded-full shadow-lg" 
+                    className="h-full w-full object-cover rounded-full shadow-lg" 
                 />
             </div>
 
