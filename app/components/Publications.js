@@ -12,8 +12,17 @@ export default function Publications() {
     link_title: "",
     image:"2D_arrangement" },
 
-    {title: "The Cosmological Grassmannian makes a Positive Geometry", 
-    abstract: "The cosmological (orthogonal) Grassmannian captures the wave functions for cosmological events. It turns out it can be naturally constructed from positivity constraints, extending the success of the amplituhedron for flat space theories to cosmology.",
+    {title: "Hodges Map, MHV Gravity Amplitudes, and Pentad Varieties", 
+    abstract: "We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the $\mathcal N=8$ supergravity. Through a vector bundle construction, we show that the Hodges matrix gives rise to a canonical rational map from the two-step flag variety to symmetric matrices, called the {\it Hodges map}. This construction allows to define the amplitude geometrically: its vanishing locus is a divisor, which we call the {\it MHV gravity divisor}. Inspired by the Hodges map, we introduce the notion of Hadamard ratio of two varieties. In the case relevant to gravity, this is ratio of two Grassmannians,which we call the \emph{pentad variety}, connecting it to the pentad constraint from algebraic statistics. Moreover, we show that the pentad variety is closely related to the affine slope variety introduced by Jeremy Martin.",
+    coauthors: "Emanuele Ventura, Hongmiao Yu",
+    link: "",
+    link_title: "",
+    image:"pentadWheel" },
+  ];
+
+  const papers26 = [
+    {title: "Positive Geometry of Yang-Mills Correlators", 
+    abstract: "We develop a positive-geometric formulation of tree-level Yang--Mills correlators in de Sitter space at three and four points through their helicity-stripped representatives on the cosmological Grassmannian. In its Pfaffian (or spinor) embedding, physical singularities become natural geometric boundaries. At three points, the Yang--Mills correlator is the canonical form of the non-negative orthant in the Grassmannian. At four points, the Mandelstam divisors partition the Pfaffian-positive domain of the Grassmannian into four positive geometries. Requiring factorization into three-point forms, together with the correct flat-space limit, uniquely selects an oriented union of two of these regions, whose canonical form reproduces the reduced color-ordered Yang--Mills correlator. The full color-ordered correlator, on the other hand, arises from a uniquely fixed signed linear combination of homology cycles. Thus, the broader homological formulation of positive geometry is essential for capturing the complete four-point result. Our construction provides a concrete starting point for a geometric description of higher-point cosmological correlators.",
     coauthors: "Mattia Arundine, Veronica Calvo Cortez, Facundo Rost",
     link: "",
     link_title: "",
@@ -58,6 +67,17 @@ export default function Publications() {
                 return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} />
               })}
       </div>
+
+      <div className="flex flex-col gap-9 lg:mx-4">
+         {/*2026*/}
+         <div className="mx-4 border-t border-gray-300 mt-8 relative">
+         <span className="absolute left-0 top-2 text-gray-500 text-sm">2026</span>
+         </div>
+        {papers26.map(({title, abstract, coauthors, link, link_title, image }, index) => {
+          return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} />
+        })}
+      </div>
+
       <div className="flex flex-col gap-9 lg:mx-4">
          {/*2025*/}
          <div className="mx-4 border-t border-gray-300 mt-8 relative">

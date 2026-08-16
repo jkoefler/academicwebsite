@@ -4,7 +4,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 export default function HeroSection() {
 
     const heading = "Ph.D. candidate"
-    const text = "Hey, I am Joris Koefler. Since October 2023, I have been pursuing my PhD under the supervision of Rainer Sinn in Bernd Sturmfels' nonlinear algebra group at the MPI MiS in Leipzig. Before that, I studied with Diane Maclagan at the University of Warwick and Christian Stump at Ruhr University Bochum.";
+    const text = "Hey, I am Joris Koefler. Starting September 2026, I will be a research fellow at the School of Natural Sciences studying with Nima Arkani-Hamed. I did my PhD under the supervision of Rainer Sinn in Bernd Sturmfels' nonlinear algebra group at the MPI MiS in Leipzig. Before that, I studied with Diane Maclagan at the University of Warwick and Christian Stump at Ruhr University Bochum.";
 
     const handleClick = (e) => {
         const target = e.target;
