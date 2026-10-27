@@ -35,8 +35,17 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-8">
-                                {navLinks.filter(i => i.text != "Contact").map(i, index => <Link onClick={() => setMobileMenuOpen(false)} href={i.href} key={index} className="links-dialogpanel">{i.text}</Link>)}
-                            </div>
+                            {navLinks
+                                .filter(i => i.text !== "Contact")
+                                .map((i, index) => (
+                                    <Link onClick={() => setMobileMenuOpen(false)} 
+                                        href={i.href} 
+                                        key={index} 
+                                        className="links-dialogpanel">
+                                    {i.text}
+                                    </Link>
+                                ))
+                                }                            </div>
                             <div className="py-6">
                                 <Link onClick={() => setMobileMenuOpen(false)} href="/" className="links-dialogpanel">
                                     Contact
