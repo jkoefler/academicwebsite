@@ -1,0 +1,23 @@
+% Segre determinant: https://arxiv.org/abs/2610.08252, Remark 2.4.
+% Amplitude normalization: https://arxiv.org/abs/2412.08713, equations (4)-(5).
+% Render with latex, then dvipng -D 300 -T tight -bg White.
+% Add a 24px white margin with sips --padToHeightWidth 561 728 --padColor FFFFFF.
+% Save the final image to public/segre_determinant_formula.png.
+\documentclass[12pt,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\(\displaystyle
+\begin{gathered}
+\Delta_{1,1}:=
+\begin{vmatrix}
+x_1u_1 & x_1v_1 & y_1u_1 & y_1v_1 \\
+x_2u_2 & x_2v_2 & y_2u_2 & y_2v_2 \\
+x_3u_3 & x_3v_3 & y_3u_3 & y_3v_3 \\
+x_4u_4 & x_4v_4 & y_4u_4 & y_4v_4
+\end{vmatrix}
+\\[18pt]
+\mathcal{M}^{\mathrm{MHV}}_5
+=\frac{\Delta_{1,1}}{\displaystyle\prod_{1\leq i<j\leq 5}\langle ij\rangle}
+\end{gathered}
+\)
+\end{document}

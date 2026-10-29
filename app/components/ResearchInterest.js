@@ -61,11 +61,11 @@ export default function ResearchInterest() {
       </h1>
 
       <HighlightedPublication
-        image="/3D_DelPezzo.png"
-        title="Positive Geometries of Positive Genus"
+        image="/amplituhedron_sphere.png"
+        title="The m=2 amplituhedron is a positive geometry"
         authors="joint work with Dmitrii Pavlov, and Rainer Sinn"
-        description="If you thought positive geometries must make genus zero pairs, you will like our Del Pezzo cube! It has a nice canonical form, but an elliptic curve in its residual arrangement, so it makes a genus 1 pair."
-        link="https://arxiv.org/abs/2601.11142"
+        description="Amplituhedra can make genus zero pairs after throwing away all the annoying stuff. So they are positive geometries...duh!"
+        link="https://arxiv.org/abs/2610.27903"
       />
 
       <button className="flex flex-row items-center gap-2 font-bold">

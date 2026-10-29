@@ -21,12 +21,36 @@ export default function Publications() {
   ];
 
   const papers26 = [
+    {title: "The m=2 amplituhedron is a positive geometry",
+    abstract: "Amplituhedra are semi-algebraic sets of fundamental importance in particle physics. Their discovery initiated the field of Positive Geometry. We settle a central conjecture in this field: we show that the m=2 amplituhedron is a positive geometry. Our main new tool is a Hodge-theoretic criterion for being a positive geometry, connecting the work of Brown–Dupont with the original setup of Arkani-Hamed–Bai–Lam.",
+    coauthors: "Dmitrii Pavlov, Rainer Sinn",
+    link: "https://arxiv.org/abs/2610.27903",
+    link_title: "arXiV",
+    image: "amplituhedron_sphere",
+    image_alt: "Sphere and planes bounding the semialgebraic region in Figure 3(a)" },
+
+    {title: "Segre determinants and MHV gravity amplitudes",
+    abstract: "We describe a Segre-Veronese construction of polynomial solutions to the interpolation conditions of the numerators of tree-level MHV gravity amplitudes given by Hodges' formula. The five- and six-point Hodges numerators arise from Segre determinants, while for every n≥7 suitable Segre determinants lead to solutions linearly independent of the Hodges numerator. The existence of such independent elements for n=7,8 was recently established by Mai and Zhang.",
+    coauthors: "Emanuele Ventura, Hongmiao Yu",
+    link: "https://arxiv.org/abs/2610.08252",
+    link_title: "arXiV",
+    image: "segre_determinant_formula",
+    image_alt: "The four-by-four Segre determinant Delta 1,1 and the five-point MHV gravity amplitude" },
+
     {title: "Positive Geometry of Yang-Mills Correlators", 
     abstract: "We develop a positive-geometric formulation of tree-level Yang--Mills correlators in de Sitter space at three and four points through their helicity-stripped representatives on the cosmological Grassmannian. In its Pfaffian (or spinor) embedding, physical singularities become natural geometric boundaries. At three points, the Yang--Mills correlator is the canonical form of the non-negative orthant in the Grassmannian. At four points, the Mandelstam divisors partition the Pfaffian-positive domain of the Grassmannian into four positive geometries. Requiring factorization into three-point forms, together with the correct flat-space limit, uniquely selects an oriented union of two of these regions, whose canonical form reproduces the reduced color-ordered Yang--Mills correlator. The full color-ordered correlator, on the other hand, arises from a uniquely fixed signed linear combination of homology cycles. Thus, the broader homological formulation of positive geometry is essential for capturing the complete four-point result. Our construction provides a concrete starting point for a geometric description of higher-point cosmological correlators.",
     coauthors: "Mattia Arundine, Veronica Calvo Cortez, Facundo Rost",
-    link: "",
-    link_title: "",
+    link: "https://arxiv.org/abs/2608.27594",
+    link_title: "arXiV",
     image:"cosmo" },
+
+    {title: "Benchmarks in Leipzig",
+    abstract: "Between April 1 and May 15, 2026, a group of 49 mathematicians compiled a dataset of research-level mathematics questions with known answers. Most of the work was done during the three-day workshop Benchmarks in Leipzig with 35 participants at the Max Planck Institute for Mathematics in the Sciences in Leipzig, Germany. We present the resulting collection of 100 questions. We evaluated these questions in three stages: a single attempt by five state-of-the-art LLMs and their predecessors, followed by a 20-runs-per-model evaluation with three of these models, and finally a 3-run attempt with two heavy-thinking models. After Stage 1, 41 questions remained completely unsolved; after Stage 2, this count dropped to 16; and we concluded Stage 3 with only 2 unsolved questions. This demonstrates that the mathematical reasoning capabilities of LLMs are becoming impressive. In September 2026, we added a fourth stage in which the next generation of models attempted all 100 questions once more, after which only 1 question remains unsolved.",
+    coauthors: "Andrei Balakin and 46 others",
+    link: "https://arxiv.org/abs/2606.05818",
+    link_title: "arXiV",
+    image: "math_science_bench",
+    image_alt: "Math Science Bench logo" },
   ];
 
   const papers25 = [
@@ -73,8 +97,8 @@ export default function Publications() {
          <div className="mx-4 border-t border-gray-300 mt-8 relative">
          <span className="absolute left-0 top-2 text-gray-500 text-sm">2026</span>
          </div>
-        {papers26.map(({title, abstract, coauthors, link, link_title, image }, index) => {
-          return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} />
+        {papers26.map(({title, abstract, coauthors, link, link_title, image, image_alt }, index) => {
+          return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} image_alt={image_alt} />
         })}
       </div>
 
@@ -101,13 +125,15 @@ export default function Publications() {
   );
 }
 
-function Paper({title, abstract, coauthors, link, link_title, image }) {
+function Paper({title, abstract, coauthors, link, link_title, image, image_alt }) {
   return(
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-start text-center lg:text-left px-4 lg:px-8 gap-12 transition-all duration-700 ease-in-out">
         {/* Left - Image */}
-        <div className="flex justify-center w-1/2 lg:w-1/3">
-          <img src={`/${image}.png`}alt="Project Image" className="rounded-xl  object-contain w-auto h-auto lg:h-auto mx-auto" />
+        <div className={`${image ? "flex" : "hidden lg:flex"} justify-center w-1/2 lg:w-1/3`}>
+          {image && (
+            <img src={`/${image}.png`} alt={image_alt || title} className="rounded-xl object-contain w-auto h-auto lg:h-auto mx-auto" />
+          )}
         </div>
         {/* Right - Text */}
         <div className=" flex-shrink-0 w-full lg:w-2/3 text-center lg:text-left p-4">

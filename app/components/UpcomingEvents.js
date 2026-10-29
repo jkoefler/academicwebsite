@@ -4,6 +4,7 @@ import { eventNames } from "process";
 export default function UpcomingEvents() {
 
   const events = [
+    {days: "09. - 12.", month: "Nov", year: "2026", location: "Institute for Advanced Study, Princeton, USA", link: "https://www.ias.edu/sns/workshop-unearthing-rosetta-stone",  title: "Workshop on Unearthing the Rosetta Stone"},
     {days: "28. - 02.", month: "Sep-Oct", year: "2026", location: "Cambridge University, UK", link: "https://indico.mpp.mpg.de/event/11861",  title: "UNIVERSE+ annual meeting"},
     //{days: "09. - 22.", month: "Mar", year: "2026", location: "ESI, Vienna", link: "https://www.esi.ac.at/events/e586/",  title: "Amplitudes and Algebraic Geometry"},
     // {days: "03. - 05.", month: "Nov", year: "2025", location: "UVA, Amsterdam", link: "https://indico.mpp.mpg.de/event/11215/",  title: "Cosmology meets Non-Linear Algebra"},
