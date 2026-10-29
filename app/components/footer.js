@@ -32,7 +32,7 @@ export default function Footer() {
 
 const socialIcons = [
     { href: "https://www.linkedin.com/in/joris-köfler-88009a255/?originalSubdomain=uk", icon: faLinkedinIn },
-    { href: "mailto:Joris.Koefler@mis.mpg.de", icon: faEnvelope },
+    { href: "mailto:koefler@ias.edu", icon: faEnvelope },
 ]
 
 export function SocialMediaBar() {

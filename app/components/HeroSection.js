@@ -48,10 +48,10 @@ export default function HeroSection() {
                 <p className="text-zinc-600 tracking-wider text-lg">
                     Email:{" "}
                     <a
-                        href="mailto:koefler@mis.mpg.de"
+                        href="mailto:koefler@ias.edu"
                         className="underline hover:text-black transition"
                     >
-                        koefler@mis.mpg.de
+                        koefler@ias.edu
                     </a>
                 </p>
 
