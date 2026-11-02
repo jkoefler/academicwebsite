@@ -43,7 +43,7 @@ export default function ResearchInterest() {
   return (
     <div className="flex flex-col gap-9 lg:mx-16">
       <h1 className="text-balance font-extrabold text-4xl">
-        Research Interest
+        Research Interests
       </h1>
 
       <div className="flex flex-col gap-5">

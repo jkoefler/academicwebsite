@@ -121,6 +121,18 @@ export default function Publications() {
           return <Paper key={index} title={title} abstract={abstract} coauthors={coauthors} link={link} link_title={link_title} image={image} />
         })}
       </div>
+
+      <div className="flex flex-col gap-9 lg:mx-4">
+        <div className="mx-4 border-t border-gray-300 mt-8 relative">
+          <span className="absolute left-0 top-2 text-gray-500 text-sm">thesis</span>
+        </div>
+        <Paper
+          title="Positive Geometries for Physics"
+          image="thesis_institutions"
+          image_alt="Max Planck Institute for Mathematics in the Sciences and Georg-August-Universität Göttingen logos"
+          abstract="Positive geometry is a novel mathematical field with close connections to particle physics that utilizes methods from complex, real, and tropical algebraic geometry. At the heart of this subject is the geometric notion of a positive geometry: essentially a real semi-algebraic set together with a differential form that satisfies a recursive condition, called the canonical form. In my thesis I explore some of its direct applications to Physics, utilizing notions from mixed Hodge theory."
+        />
+      </div>
     </div>
   );
 }
@@ -146,12 +158,12 @@ function Paper({title, abstract, coauthors, link, link_title, image, image_alt }
               with {coauthors}
             </p>
           )}
-          <Abstract
-          text={abstract}
-          />
-          <Link href={link} target="_blank" rel="noopener noreferrer" className="text-balance font-semibold text-1xl mb-1 hover:underline">
-            {link_title}
-          </Link>
+          <Abstract text={abstract} />
+          {link && (
+            <Link href={link} target="_blank" rel="noopener noreferrer" className="text-balance font-semibold text-1xl mb-1 hover:underline">
+              {link_title}
+            </Link>
+          )}
         </div>
       </div>
     </div>
