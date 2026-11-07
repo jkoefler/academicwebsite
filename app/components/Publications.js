@@ -11,16 +11,16 @@ export default function Publications() {
     link: "",
     link_title: "",
     image:"2D_arrangement" },
-
-    {title: "Hodges Map, MHV Gravity Amplitudes, and Pentad Varieties", 
-    abstract: "We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the $\mathcal N=8$ supergravity. Through a vector bundle construction, we show that the Hodges matrix gives rise to a canonical rational map from the two-step flag variety to symmetric matrices, called the {\it Hodges map}. This construction allows to define the amplitude geometrically: its vanishing locus is a divisor, which we call the {\it MHV gravity divisor}. Inspired by the Hodges map, we introduce the notion of Hadamard ratio of two varieties. In the case relevant to gravity, this is ratio of two Grassmannians,which we call the \emph{pentad variety}, connecting it to the pentad constraint from algebraic statistics. Moreover, we show that the pentad variety is closely related to the affine slope variety introduced by Jeremy Martin.",
-    coauthors: "Emanuele Ventura, Hongmiao Yu",
-    link: "",
-    link_title: "",
-    image:"pentadWheel" },
   ];
 
   const papers26 = [
+    {title: "From MHV Gravity Amplitudes and Hodges map to Pentad Varieties",
+    abstract: "We study some geometric aspects behind the Hodges matrix appearing in the context of scattering amplitudes for the 𝒩 = 8 supergravity. Through a vector bundle construction, we show that the Hodges matrix gives rise to a canonical rational map from the two-step flag variety to symmetric matrices, called the Hodges map. This construction allows to define the amplitude geometrically: its vanishing locus is a divisor, which we call the MHV gravity divisor. Inspired by the Hodges map, we introduce the notion of Hadamard ratio of two varieties. In the case relevant to gravity, this is the ratio of two Grassmannians, which we call the pentad variety, connecting it to the pentad constraint from algebraic statistics. Moreover, we show that the pentad variety is closely related to the affine slope variety introduced by Jeremy Martin.",
+    coauthors: "Emanuele Ventura, Hongmiao Yu",
+    link: "https://arxiv.org/abs/2611.00864",
+    link_title: "arXiv",
+    image:"pentadWheel" },
+
     {title: "The m=2 amplituhedron is a positive geometry",
     abstract: "Amplituhedra are semi-algebraic sets of fundamental importance in particle physics. Their discovery initiated the field of Positive Geometry. We settle a central conjecture in this field: we show that the m=2 amplituhedron is a positive geometry. Our main new tool is a Hodge-theoretic criterion for being a positive geometry, connecting the work of Brown–Dupont with the original setup of Arkani-Hamed–Bai–Lam.",
     coauthors: "Dmitrii Pavlov, Rainer Sinn",
@@ -130,6 +130,9 @@ export default function Publications() {
           title="Positive Geometries for Physics"
           image="thesis_institutions"
           image_alt="Max Planck Institute for Mathematics in the Sciences and Georg-August-Universität Göttingen logos"
+          link="/Positive-Geometries-for-Physics.pdf"
+          link_title="Download thesis"
+          download
           abstract="Positive geometry is a novel mathematical field with close connections to particle physics that utilizes methods from complex, real, and tropical algebraic geometry. At the heart of this subject is the geometric notion of a positive geometry: essentially a real semi-algebraic set together with a differential form that satisfies a recursive condition, called the canonical form. In my thesis I explore some of its direct applications to Physics, utilizing notions from mixed Hodge theory."
         />
       </div>
@@ -137,7 +140,9 @@ export default function Publications() {
   );
 }
 
-function Paper({title, abstract, coauthors, link, link_title, image, image_alt }) {
+function Paper({title, abstract, coauthors, link, link_title, image, image_alt, download }) {
+  const EntryLink = download ? "a" : Link;
+
   return(
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-start text-center lg:text-left px-4 lg:px-8 gap-12 transition-all duration-700 ease-in-out">
@@ -160,9 +165,9 @@ function Paper({title, abstract, coauthors, link, link_title, image, image_alt }
           )}
           <Abstract text={abstract} />
           {link && (
-            <Link href={link} target="_blank" rel="noopener noreferrer" className="text-balance font-semibold text-1xl mb-1 hover:underline">
+            <EntryLink href={link} download={download} target={download ? undefined : "_blank"} rel={download ? undefined : "noopener noreferrer"} className="text-balance font-semibold text-1xl mb-1 hover:underline">
               {link_title}
-            </Link>
+            </EntryLink>
           )}
         </div>
       </div>

@@ -36,6 +36,38 @@ To run this project locally, follow these steps:
 
 The website will be available at http://localhost:3000.
 
+## Deploy to the web server
+
+The deployment script uses Cyberduck CLI (`duck`) and the SSH key at
+`~/.ssh/hetzner`. On a new laptop, install Node.js, run `npm ci` in this
+repository, install the uploader with `brew install duck`, and make sure that
+the SSH key is present and readable. Keep the private key outside the repository.
+
+From the repository, run:
+
+```bash
+./upload.sh --check     # Check prerequisites and list the server; no upload
+./upload.sh --dry-run   # Build and preview commands; no server connection
+./upload.sh             # Build and publish to /public_html
+```
+
+The script also works when launched by its full path from another directory.
+If your key is stored elsewhere, set `DEPLOY_IDENTITY_FILE` when running it:
+
+```bash
+DEPLOY_IDENTITY_FILE="$HOME/.ssh/another-key" ./upload.sh --check
+```
+
+An ordinary deployment stops on errors, checks the exported files, and uploads
+assets before HTML and `.htaccess`. It overwrites matching files and preserves
+other remote files, including old hashed assets. Removed pages therefore need
+to be cleaned up separately. This is an in-place upload, so an interrupted
+transfer can leave a mixture of versions; fix the error and rerun the script.
+
+The root `.htaccess` serves exported routes such as `/research` from their
+matching `.html` files and uses `404.html` for missing pages. It replaces the
+old `/subdirectory` placeholder in `htaccess copy`.
+
 ## Technologies Used
 
 - **[Next.js](https://nextjs.org/):** A React framework for building optimized, server-rendered web applications. It provides file-based routing, which is used in this project to handle navigation between different pages like the research, teaching, and CV sections.
